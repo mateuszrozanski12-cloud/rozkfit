@@ -49,15 +49,20 @@ footer{border-top:1px solid var(--line);margin-top:44px;padding-top:18px;color:v
 <h2>Najważniejsze w skrócie</h2>
 <ul>
 <li>Nie wymagamy zakładania konta.</li>
-<li>Wszystko, co wpisujesz (cel, wiek, wzrost, waga, posiłki, treningi, ciężary, nawyki, sen, samopoczucie), <b>zostaje w Twoim telefonie</b>. Nie wysyłamy tych danych na żaden nasz serwer.</li>
-<li>Wyjątek to <b>ranking znajomych</b>, z którego korzystasz tylko, jeśli sam do niego dołączysz. Wtedy na serwer trafia Twój nick i rangi mięśni (opis niżej).</li>
-<li>Gdy użyjesz funkcji AI („Zdjęcie” albo „Opisz”), zdjęcie posiłku lub opis jest wysyłany do Google tylko po to, żeby policzyć kalorie (opis niżej).</li>
+<li>Wszystko, co wpisujesz (cel, wiek, wzrost, waga, posiłki, treningi, ciężary, nawyki, sen, samopoczucie, dieta, zdjęcia sylwetki), <b>zostaje w Twoim telefonie</b>. Nie zapisujemy tych danych na naszym serwerze.</li>
+<li>Wyjątki, z których korzystasz tylko, jeśli sam ich użyjesz (opis niżej):
+<ul>
+<li><b>Funkcje AI</b> („Zdjęcie”, „Opisz”, etykieta, raport tygodnia, plan treningowy, „Co zjeść?”): wysyłamy do Google tylko to, co potrzebne do odpowiedzi, i tego nie zapisujemy.</li>
+<li><b>Ranking znajomych</b>: nick i rangi mięśni.</li>
+<li><b>Udostępnienie produktu innym</b>: nazwa produktu, kod kreskowy i wartości odżywcze.</li>
+<li><b>Pro i limity AI</b>: anonimowy identyfikator, data ważności Pro i liczba użyć AI w danym dniu.</li>
+</ul></li>
 <li>Nie sprzedajemy danych i nie używamy ich do reklam.</li>
 </ul>
 </section>
 
 <h2>Jakie dane są przetwarzane</h2>
-<p><b>Dane, które wpisujesz:</b> cel, płeć, wiek, wzrost, masa ciała, posiłki, woda, kreatyna, treningi, sen, samopoczucie i waga. Są zapisywane wyłącznie w pamięci telefonu i służą tylko do obliczeń w aplikacji. Usuniesz je, odinstalowując aplikację albo czyszcząc jej dane w ustawieniach Androida.</p>
+<p><b>Dane, które wpisujesz:</b> cel, płeć, wiek, wzrost, masa ciała, posiłki, woda, kreatyna, treningi, sen, samopoczucie, waga, nawyki, rodzaj diety (także „bez laktozy” i „bez glutenu”), plan treningowy, pomiary i zdjęcia sylwetki. Są zapisywane wyłącznie w pamięci telefonu i służą tylko do obliczeń w aplikacji. Usuniesz je, odinstalowując aplikację albo czyszcząc jej dane w ustawieniach Androida.</p>
 <p><b>Wyszukiwanie produktów i kody kreskowe:</b> gdy skanujesz kod albo szukasz produktu w bazie sklepów, aplikacja wysyła sam kod kreskowy albo wpisaną nazwę produktu do bezpłatnej bazy Open Food Facts, żeby pobrać kalorie i makroskładniki. Nie wysyłamy przy tym żadnych danych o Tobie. Zasady tej bazy opisuje jej <a href="https://world.openfoodfacts.org/privacy">polityka prywatności</a>.</p>
 <p><b>Ranking znajomych (opcjonalny):</b> jeśli w zakładce Trening dołączysz do rankingu, aplikacja tworzy anonimowe konto (bez e-maila, telefonu i hasła) i zapisuje na serwerze Google Firebase (Cloud Firestore, region Europa) tylko: wybrany przez Ciebie nick, kod zaproszenia (np. ROZ-1234), Twoje rangi poszczególnych partii mięśni i rangę ogólną, liczbę serii w bieżącym tygodniu, listę dodanych znajomych oraz anonimowy identyfikator konta. Te informacje widzą wyłącznie zalogowani użytkownicy aplikacji, a w praktyce Twoi znajomi, którzy znają Twój kod. <b>Nie wysyłamy</b> Twojej wagi ciała, wzrostu, wieku, ciężarów, jedzenia ani zdjęć. Prosimy, żeby nick nie był Twoim imieniem i nazwiskiem. Celem przetwarzania jest działanie rankingu, a podstawą Twoja zgoda wyrażona przez dołączenie. W każdej chwili możesz kliknąć „Opuść ranking” (ekran Znajomi → menu ⋮): usuwa to Twój profil, kod i listę znajomych z serwera. Jeśli odinstalujesz aplikację bez opuszczenia rankingu, napisz do nas, a usuniemy Twoje dane. Usługę serwera dostarcza Google (<a href="https://firebase.google.com/support/privacy">zasady prywatności Firebase</a>).</p>
 <p><b>Rozpoznawanie posiłków przez AI (opcjonalne):</b> gdy klikniesz „Zdjęcie” albo „Opisz”, aplikacja wysyła zrobione przez Ciebie zdjęcie posiłku (pomniejszone) albo wpisany opis do naszej funkcji serwerowej w Google Cloud (Firebase Cloud Functions, region Warszawa), która przekazuje je do modelu Gemini (Google Cloud). Google zwraca listę produktów z szacowanymi kaloriami i makroskładnikami. Nie zapisujemy zdjęć ani opisów, a wynik trafia tylko do Dziennika w Twoim telefonie. Google przetwarza te dane jako dostawca usługi i zgodnie ze swoimi warunkami dla usług płatnych nie używa ich do trenowania modeli. Do działania funkcji aplikacja tworzy anonimowy identyfikator (bez e-maila i hasła), a serwer zapisuje przy nim tylko liczbę użyć AI w danym dniu, żeby pilnować dziennego limitu. Nie fotografuj osób ani dokumentów – wysyłaj tylko zdjęcia jedzenia. Wynik AI to szacunek i może się mylić.</p>
